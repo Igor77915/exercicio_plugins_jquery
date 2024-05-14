@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <H1>Cadastro</H1>
+        <input type="text" required placeholder="Nome Completo">
+        <input type="email" required placeholder="Email">
+        <input type="tel" id="Telefone" required placeholder="Telefone">
+        <input type="text" id="CPF" required placeholder="CPF">
+        <input type="tel" required placeholder="Endereço">
+        <input type="tel" id="CEP" required placeholder="CEP">
+        <button type="submit">Enviar</button>
+    </form>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#Telefone').mask('(00) 00000-0000')
+            $('#CPF').mask('000.000.000-00')
+            $('#CEP').mask('00000-000')
+        })
+    </script>
+</body>
+</html>
